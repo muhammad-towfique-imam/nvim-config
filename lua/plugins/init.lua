@@ -13,6 +13,24 @@ return {
     end,
   },
 
+  {
+    "NeogitOrg/neogit",
+    dependencies = { "nvim-lua/plenary.nvim", "sindrets/diffview.nvim" },
+    cmd = "Neogit",
+    config = true,
+  },
+
+  -- In-buffer markdown rendering (headings, code blocks, tables, checkboxes)
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons",
+    },
+    ft = { "markdown", "markdown_inline" },
+    opts = {},
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
